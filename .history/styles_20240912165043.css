@@ -1,0 +1,10 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #0b319b;
+    --background-color: #1a1c20;
+}
+* {
+    margin: 0;
+    padding: 0;
+    
+}
