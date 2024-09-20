@@ -127,10 +127,9 @@ nav .right a span {
   border: 1.5px solid #d3d3d3;
   border-radius: 5px;
 }
-.skills-section .cells .cell:hover {
-    color: var(--link-color);
-    border: 1.5px solid var(--link-color);
-    transition: .1s;
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
   }
 .skills-section .cells .cell img {
   width: 30px;

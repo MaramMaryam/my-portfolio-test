@@ -1,6 +1,6 @@
 :root {
   --text-color: #d8dce2;
-  --link-color: #3f63c7;
+  --link-color: #5377d8;
   --background-color: #090f18;
 }
 * {
@@ -16,7 +16,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   max-width: 1400px;
-  margin: 0 auto;
+  margin:  0 auto;
 }
 a {
   color: var(--link-color);
@@ -31,10 +31,8 @@ nav {
   height: 80px;
   align-items: center;
 }
-nav .left a:hover,
-nav .right a:hover {
-  color: var(--link-color);
-  transition: 0.1s;
+nav .left a, nav .left a:hover {
+    color: var(--link-color);
 }
 nav .left a {
   color: var(--text-color);
@@ -103,7 +101,6 @@ nav .right a span {
 }
 
 .skills-section h2 {
-  color: var(--link-color);
   text-align: center;
   font-size: 35px;
 }
@@ -127,11 +124,6 @@ nav .right a span {
   border: 1.5px solid #d3d3d3;
   border-radius: 5px;
 }
-.skills-section .cells .cell:hover {
-    color: var(--link-color);
-    border: 1.5px solid var(--link-color);
-    transition: .1s;
-  }
 .skills-section .cells .cell img {
   width: 30px;
   height: 30px;
@@ -150,81 +142,81 @@ nav .right a span {
 .testimony-section h2 {
   font-size: 35px;
   margin-bottom: 30px;
-  color: var(--link-color);
 }
 .testimony-section .group {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 .testimony-section .group .person-details {
-  text-align: center;
-  flex: 2;
+    text-align: center;
+    flex: 2;
 }
 .testimony-section .group .person-details img {
-  width: 200px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 .testimony-section .group .person-details p {
-  font-weight: 600;
+    font-weight: 600;
 }
 .testimony-section .group .person-details p:last-child {
-  font-weight: normal;
+    font-weight: normal;
 }
 
-.testimony-section .group .text {
-  flex: 8;
+.testimony-section .group  .text {
+    flex: 8;
 }
 
-/* SECTION 4: Contact */
-.contact-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
-}
-.contact-section h2 {
-  font-size: 35px;
-  color: var(--link-color);
-}
-.contact-section .group {
-  display: flex;
-  gap: 50px;
-}
-.contact-section .group .text {
-  flex: 3;
-  margin-top: 20px;
-}
-.contact-section .group form {
-  flex: 3;
-  display: flex;
-  flex-direction: column;
-}
-.contact-section .group form input,
-.contact-section .group form textarea {
-  font-family: "Poppins", sans-serif;
-  border: 2px solid var(--link-color);
-  background-color: transparent;
-  padding: 10px;
-  margin-bottom: 15px;
-  outline: none;
-  resize: none;
-}
-.contact-section .group form button {
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  color: bisque;
-  background-color: var(--link-color);
-  border: none;
-  height: 50px;
-  cursor: pointer;
-  transition: 0.1s;
-}
-.contact-section .group form button:hover {
-  filter: brightness(0.9);
-}
+  /* SECTION 4: Contact */
+  .contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+  }
+  .contact-section h2 {
+    font-size: 35px;
+  }
+  .contact-section .group {
+    display: flex;
+    gap: 50px;
+  }
+  .contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+  }
+  .contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section .group form input,
+  .contact-section .group form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+  }
+  .contact-section .group form button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: bisque;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+  }
+  .contact-section .group form button:hover {
+    filter: brightness(.9)
+  }
 
+
+  
 @media (max-width: 850px) {
   /* SECTION1 : HERO*/
   .hero-section .text h2 {
@@ -247,10 +239,10 @@ nav .right a span {
   .testimony-section .group {
     flex-direction: column;
   }
-  /* SECTION 4: Testimony */
-  .contact-section .group {
-    flex-direction: column;
-  }
+    /* SECTION 4: Testimony */
+    .contact-section .group {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 600px) {

@@ -127,11 +127,6 @@ nav .right a span {
   border: 1.5px solid #d3d3d3;
   border-radius: 5px;
 }
-.skills-section .cells .cell:hover {
-    color: var(--link-color);
-    border: 1.5px solid var(--link-color);
-    transition: .1s;
-  }
 .skills-section .cells .cell img {
   width: 30px;
   height: 30px;
@@ -186,7 +181,6 @@ nav .right a span {
 }
 .contact-section h2 {
   font-size: 35px;
-  color: var(--link-color);
 }
 .contact-section .group {
   display: flex;

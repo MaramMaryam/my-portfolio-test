@@ -128,9 +128,8 @@ nav .right a span {
   border-radius: 5px;
 }
 .skills-section .cells .cell:hover {
-    color: var(--link-color);
-    border: 1.5px solid var(--link-color);
-    transition: .1s;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
   }
 .skills-section .cells .cell img {
   width: 30px;
